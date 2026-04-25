@@ -1,22 +1,22 @@
-<<<<<<< HEAD
+<?php
+echo '<br><button><a href="materi1.php">Materi 2 : Kondisi dan Looping</a></button>';
+?>
+
 <form method="post">
     Masukan angka : <input type="number" name="angka"><br>
-    <input type ="submit" Value ="kirim">
+    <input type="submit" value="kirim">
 </form>
 
 <?php
-if(isset($_POST['angka'])){
-
+if (isset($_POST['angka'])) {
     $data = $_POST['angka'];
-    for($i=1; $i<=$data; $i++){
+    for ($i = 1; $i <= $data; $i++) {
         echo "angka ke $i <br>";
     }
 }
-?>
 
-//Looping While dan Do While
+// Looping While dan Do While
 
-<?php
 echo "<br> Ini Perulangan While <br>";
 if (isset($_POST['angka'])) {
     $data = $_POST['angka'];
@@ -26,9 +26,7 @@ if (isset($_POST['angka'])) {
         $i++;
     }
 }
-?>
 
-<?php
 echo "<br> Ini Perulangan Do While <br>";
 if (isset($_POST['angka'])) {
     $data = $_POST['angka'];
@@ -67,19 +65,3 @@ if (isset($_POST['angka'])) {
     background-color: #45a049;
 }
 </style>
-
-=======
-<form method="post">
-    Masukan angka : <input type="number" name="angka"><br>
-    <input type ="submit" Value ="kirim">
-</form>
-
-<?php
-if(isset($_POST['angka'])){
-
-    $data = $_POST['angka'];
-    for($i=1; $i<=$data; $i++){
-        echo "angka ke $i <br>";
-    }
-}
->>>>>>> d25a93798e79585ce40ca389bd033e1dab194d13

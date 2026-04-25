@@ -1,31 +1,4 @@
 <?php
-// Materi 3: Fungsi (Function)
-
-// Contoh fungsi sederhana
-function salam() {
-    return "Halo, selamat belajar PHP!";
-}
-
-// Fungsi dengan parameter
-function salamDenganNama($nama) {
-    return "Halo, $nama! Selamat belajar PHP!";
-}
-
-// Fungsi dengan parameter default
-function salamDefault($nama = "Mahasiswa") {
-    return "Halo, $nama! Selamat belajar PHP!";
-}
-
-// Fungsi dengan return value
-function tambah($a, $b) {
-    return $a + $b;
-}
-
-// Fungsi dengan tipe return
-function cekGenap($angka): bool {
-    return $angka % 2 == 0;
-}
-
 // Floating button untuk kembali ke menu utama
 echo '<a href="index.php" class="floating-btn" title="Kembali ke Menu">🏠</a>';
 
@@ -38,7 +11,31 @@ echo "<h2>Contoh Penggunaan Fungsi:</h2>";
 echo "5 + 3 = " . tambah(5, 3) . "<br>";
 echo "Apakah 4 genap? " . (cekGenap(4) ? "Ya" : "Tidak") . "<br>";
 echo "Apakah 7 genap? " . (cekGenap(7) ? "Ya" : "Tidak") . "<br>";
+
+// Definisi fungsi
+function salam() {
+    return "Selamat Datang di Materi Fungsi!";
+}
+
+function salamDenganNama($nama) {
+    return "Halo, $nama!";
+}
+
+function salamDefault() {
+    return "Halo, Pengguna!";
+}
+
+function tambah($a, $b) {
+    return $a + $b;
+}
+
+function cekGenap($angka) {
+    return $angka % 2 == 0;
+}
 ?>
+
+<!-- Floating Button -->
+<a href="index.php" class="floating-btn" title="Kembali ke Menu">🏠</a>
 
 <style>
 .floating-btn {
